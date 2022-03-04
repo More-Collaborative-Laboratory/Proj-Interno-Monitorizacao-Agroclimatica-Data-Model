@@ -1,0 +1,39 @@
+# BIOMA, @2021
+# 
+
+openapi: 3.0.0
+
+# General Data Model Information
+info:
+  title: Projeto Interno - Monitorização Agroclimática
+  description: Data model to be used in the intern project "Monitorização Agroclimática" of the Tech group of MORE
+  version: 0.0.1
+  contact:
+    name: TBD
+    url: https://morecolab.pt/TBD
+  
+components:
+  schemas: 
+    Organization:
+      $ref: "https://raw.githubusercontent.com/More-Collaborative-Laboratory/siBIO-Data-Model/master/organization.yaml#/organization"
+    Process:
+      $ref: "https://raw.githubusercontent.com/More-Collaborative-Laboratory/siBIO-Data-Model/master/process.yaml#/process"
+    Asset:
+      $ref: "https://raw.githubusercontent.com/More-Collaborative-Laboratory/siBIO-Data-Model/master/asset.yaml#/asset"
+    MeasurementNode:
+      $ref: "https://raw.githubusercontent.com/More-Collaborative-Laboratory/siBIO-Data-Model/master/node.yaml#/measurementNode"
+    Worker:
+      $ref: "https://raw.githubusercontent.com/More-Collaborative-Laboratory/siBIO-Data-Model/master/worker.yaml#/worker"
+    Sensor:
+      $ref: "https://raw.githubusercontent.com/More-Collaborative-Laboratory/siBIO-Data-Model/master/sensor.yaml#/sensor"
+
+paths:
+  /ngsi-ld/v1/entities:
+    get:
+      responses:
+        '200':
+          description: 'OK'
+          content:
+            application/ld+json:
+              schema:
+                type: object
