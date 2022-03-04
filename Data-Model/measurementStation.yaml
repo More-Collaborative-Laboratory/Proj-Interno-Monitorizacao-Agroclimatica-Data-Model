@@ -21,15 +21,6 @@ measurementStation:
             model: https://schema.org/name
             type: Property
             
-        details: 
-          description: Process details/characteristics
-          type: string
-          x-ngsi:
-            uri: "https://projetobioma.pt/dataModel/details"
-            uri-prefix: "https://projetobioma.pt/dataModel/"
-            model: https://schema.org/text
-            type: Property
-
         location:
           description: 'Geojson reference to the item. It can be Point, LineString, Polygon, MultiPoint, MultiLineString or MultiPolygon'
           oneOf:
@@ -189,3 +180,4 @@ measurementStation:
     required:
         - id
         - name
+        - location
