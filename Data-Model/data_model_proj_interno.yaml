@@ -16,12 +16,8 @@ components:
   schemas: 
     Client:
       $ref: "https://raw.githubusercontent.com/More-Collaborative-Laboratory/Proj-Interno-Monitorizacao-Agroclimatica-Data-Model/master/Data-Model/client.yaml#/client"
-    Process:
-      $ref: "https://raw.githubusercontent.com/More-Collaborative-Laboratory/siBIO-Data-Model/master/process.yaml#/process"
-    Asset:
-      $ref: "https://raw.githubusercontent.com/More-Collaborative-Laboratory/siBIO-Data-Model/master/asset.yaml#/asset"
-    MeasurementNode:
-      $ref: "https://raw.githubusercontent.com/More-Collaborative-Laboratory/siBIO-Data-Model/master/node.yaml#/measurementNode"
+    MeasurementStation:
+      $ref: "https://raw.githubusercontent.com/More-Collaborative-Laboratory/Proj-Interno-Monitorizacao-Agroclimatica-Data-Model/master/Data-Model/measurementStation.yaml#/measurementStation"
     Worker:
       $ref: "https://raw.githubusercontent.com/More-Collaborative-Laboratory/siBIO-Data-Model/master/worker.yaml#/worker"
     Sensor:
