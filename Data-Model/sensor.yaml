@@ -19,23 +19,27 @@ sensor:
             * `Energy` - Energy consumption measurement
         type: string
         enum: 
-            - Water
-            - Energy
-        example: Energy
+            - PM2.5
+            - PM10
+            - CO2
+            - O3
+            - NO2
+            - Sound
+        example: PM10
         x-ngsi:
-            uri: "https://projetobioma.pt/dataModel/measurementVariable"
-            uri-prefix: "https://projetobioma.pt/dataModel/"
-            type: Property
+          uri: "http://morecolab.pt/pi/monAgroclimatica/dataModel/measurementVariable"
+          uri-prefix: "http://morecolab.pt/pi/monAgroclimatica/dataModel/"
+          type: Property
 
     measurementValue:
       description: Measured variable quantity consumed by a given asset, within a process
       minimum: 0
       type: number
       x-ngsi:
-        uri: "https://projetobioma.pt/dataModel/measurementValue"
-        uri-prefix: "https://projetobioma.pt/dataModel/"
+        uri: "http://morecolab.pt/pi/monAgroclimatica/dataModel/measurementValue"
+        uri-prefix: "http://morecolab.pt/pi/monAgroclimatica/dataModel/"
         type: Property
-        units: MTQ [water], KWH [energy]
+        units: GQ [µm/m3], 2N [dB]
 
     belongsTo:
         anyOf:
@@ -47,12 +51,12 @@ sensor:
             - description: 'Relationship property: Identifier format of any NGSI entity'
               format: uri
               type: string
-        description: 'Identification of the Measurement node the sensor is connected to.'
+        description: 'Identification of the Measurement station the sensor is built in.'
         x-ngsi:
-            uri: "https://projetobioma.pt/dataModel/belongsTo"
-            uri-prefix: "https://projetobioma.pt/dataModel/"
-            model: https://schema.org/URL
-            type: Relationship
+          uri: "http://morecolab.pt/pi/monAgroclimatica/dataModel/belongsTo"
+          uri-prefix: "http://morecolab.pt/pi/monAgroclimatica/dataModel/"
+          model: https://schema.org/URL
+          type: Relationship
 
   required:
     - id
