@@ -10,17 +10,11 @@
           example: urn:ngsi-ld:Client:clientIdentifier
           x-ngsi:
             type: Property
-        clientType:
-          description: Type of client
-            * `Singular` - client is a Person
-            * `Institution` - client is a Corporation/Enterprise
-          type: string
-          enum:
-            - Singular
-            - Institution
-          example: Singular
+        clientTypeInstitution:
+          type: boolean
+          example: True
           x-ngsi:
-            uri: "http://morecolab.pt/pi/monAgroclimatica/dataModel/clientType"
+            uri: "http://morecolab.pt/pi/monAgroclimatica/dataModel/clientTypeInstitution"
             uri-prefix: "http://morecolab.pt/pi/monAgroclimatica/dataModel/"
 
         legalName: 
@@ -28,13 +22,13 @@
           type: string
           example: Câmara Municipal de Bragança
           x-ngsi:
-            uri: "http://morecolab.pt/pi/monAgroclimatica/dataModel/legalName"
-            uri-prefix: "http://morecolab.pt/pi/monAgroclimatica/dataModel/"
+            uri: "https://schema.org/legalName"
+            uri-prefix: "https://schema.org/"
             model: https://schema.org/legalName
             type: Property
 
         givenName: 
-          description: Worker first name
+          description: Client first name
           type: string
           example: John
           x-ngsi:
@@ -44,7 +38,7 @@
             type: Property
             
         familyName: 
-          description: Worker last name
+          description: Client last name
           type: string
           example: Smith
           x-ngsi:
@@ -54,7 +48,7 @@
             type: Property
             
         taxId:
-          description: Worker/Institution Tax ID
+          description: Client/Institution Tax ID
           type: string
           pattern: '^\d{9}$'
           example: 254545879
@@ -72,7 +66,7 @@
             streetAddress:
               description: Street name
               type: string         
-              example: Rua de São Bento
+              example: Rua de São Bento, 55, 4º Esq.
               x-ngsi:
                 uri: "https://schema.org/streetAddress"
                 uri-prefix: "https://schema.org/"
@@ -147,3 +141,8 @@
 
       required:
         - id
+        - clientTypeInstitution
+        - taxId
+        - address
+        - email
+        - telephone
