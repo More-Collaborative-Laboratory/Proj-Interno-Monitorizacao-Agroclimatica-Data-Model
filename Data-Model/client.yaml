@@ -11,6 +11,7 @@
           x-ngsi:
             type: Property
         clientTypeInstitution:
+          description: Type of client -> True identifies an institutional client. False identifies a singular client
           type: boolean
           example: True
           x-ngsi:
