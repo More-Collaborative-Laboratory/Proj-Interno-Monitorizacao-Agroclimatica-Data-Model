@@ -21,7 +21,7 @@ components:
     Worker:
       $ref: "https://raw.githubusercontent.com/More-Collaborative-Laboratory/siBIO-Data-Model/master/worker.yaml#/worker"
     Sensor:
-      $ref: "https://raw.githubusercontent.com/More-Collaborative-Laboratory/siBIO-Data-Model/master/sensor.yaml#/sensor"
+      $ref: "https://raw.githubusercontent.com/More-Collaborative-Laboratory/Proj-Interno-Monitorizacao-Agroclimatica-Data-Model/master/Data-Model/sensor.yaml#/sensor"
 
 paths:
   /ngsi-ld/v1/entities:
