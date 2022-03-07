@@ -13,8 +13,12 @@ sensor:
 
     measurementVariable: 
         description: Defines the variable that the sensor can measure
-            * `PM2.5` - Water consumption measurement
-            * `Energy` - Energy consumption measurement
+            * `PM2.5` - PM2 measurement
+            * `PM10` - PM10 measurement
+            * `CO2` - CO2 measurement
+            * `NO2` - NO2 measurement
+            * `O3` - O3 measurement
+            * `Sound` - Sound measurement
         type: string
         enum: 
             - PM2.5
@@ -49,7 +53,7 @@ sensor:
             - description: 'Relationship property: Identifier format of any NGSI entity'
               format: uri
               type: string
-        description: 'Identification of the Measurement station the sensor is built in.'
+        description: 'Identification of the Measurement station the sensor is attached in.'
         x-ngsi:
           uri: "http://morecolab.pt/pi/monAgroclimatica/dataModel/belongsTo"
           uri-prefix: "http://morecolab.pt/pi/monAgroclimatica/dataModel/"
