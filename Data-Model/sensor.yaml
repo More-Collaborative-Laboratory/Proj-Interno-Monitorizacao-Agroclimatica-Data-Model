@@ -11,11 +11,9 @@ sensor:
       x-ngsi:
         type: Property    
 
-
-
     measurementVariable: 
         description: Defines the variable that the sensor can measure
-            * `Water` - Water consumption measurement
+            * `PM2.5` - Water consumption measurement
             * `Energy` - Energy consumption measurement
         type: string
         enum: 
