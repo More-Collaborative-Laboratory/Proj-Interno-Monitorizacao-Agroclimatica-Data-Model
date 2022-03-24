@@ -1,0 +1,30 @@
+{
+    "@context": {
+        "type": "@type",
+        "id": "@id",
+        "ngsi-ld": "https://uri.etsi.org/ngsi-ld/",
+        "fiware": "https://morecolab.pt/internProjects/AgroMonitoring/dataModel/",
+        "schema": "https://schema.org/",
+        "Client": "ipAgroMon:Client",
+        "MeasurementStation": "ipAgroMon:MeasurementStation",
+        "Sensor": "ipAgroMon:Sensor",
+        "address": "schema:address",
+        "addressCountry": "schema:addressCountry",
+        "addressLocality": "schema:addressLocality",
+        "addressRegion": "schema:addressRegion",
+        "belongsTo": "http://morecolab.pt/pi/monAgroclimatica/dataModel/belongsTo",
+        "clientTypeInstitution": "http://morecolab.pt/pi/monAgroclimatica/dataModel/clientTypeInstitution",
+        "email": "schema:email",
+        "familyName": "schema:familyName",
+        "givenName": "schema:givenName",
+        "legalName": "schema:legalName",
+        "location": "ngsi-ld:location",
+        "measurementValue": "http://morecolab.pt/pi/monAgroclimatica/dataModel/measurementValue",
+        "measurementVariable": "http://morecolab.pt/pi/monAgroclimatica/dataModel/measurementVariable",
+        "name": "schema:name",
+        "postalCode": "schema:postalCode",
+        "streetAddress": "schema:streetAddress",
+        "taxId": "schema:taxID",
+        "telephone": "schema:telephone"
+    }
+}
