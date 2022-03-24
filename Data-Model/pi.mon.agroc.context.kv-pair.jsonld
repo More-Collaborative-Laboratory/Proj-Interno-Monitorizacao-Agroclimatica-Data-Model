@@ -3,7 +3,7 @@
         "type": "@type",
         "id": "@id",
         "ngsi-ld": "https://uri.etsi.org/ngsi-ld/",
-        "fiware": "https://morecolab.pt/internProjects/AgroMonitoring/dataModel/",
+        "agro-mon": "https://morecolab.pt/internProjects/AgroMonitoring/dataModel/",
         "schema": "https://schema.org/",
         "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
         "xsd": "http://www.w3.org/2001/XMLSchema#",
