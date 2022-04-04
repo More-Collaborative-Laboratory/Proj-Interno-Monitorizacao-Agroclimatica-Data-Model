@@ -15,7 +15,7 @@ sensor:
         description: Defines the variable that the sensor can measure
             * `PM2.5` - PM2 measurement
             * `PM10` - PM10 measurement
-            * `CO2` - CO2 measurement
+            * `SO2` - SO2 measurement
             * `NO2` - NO2 measurement
             * `O3` - O3 measurement
             * `Sound` - Sound measurement
@@ -23,7 +23,7 @@ sensor:
         enum: 
             - PM2.5
             - PM10
-            - CO2
+            - SO2
             - O3
             - NO2
             - Sound
